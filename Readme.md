@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Максим Васьков](https://up.htmlacademy.ru/htmlcss/20/user/644897).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
