@@ -34,112 +34,114 @@
             <span class="phone">8 812 450-25-25</span>
         </p>
     </header>
-    <ul class="breadcrumbs">
-        <li><a href="#">Главная  »</a></li>
-        <li><a href="#">Каталог  »</a></li>
-        <li>Сливочное</li>
-    </ul>
-    <section class="filters">
-        <h1>Сливочное мороженое</h1>
-        <div class="sort">
-            <label for="sort">Сортировка:</label><br>
-            <select id="sort" name="sort">
+    <main class="main">
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная  »</a></li>
+            <li><a href="#">Каталог  »</a></li>
+            <li>Сливочное</li>
+        </ul>
+        <section class="filters">
+            <h1>Сливочное мороженое</h1>
+            <div class="sort">
+                <label for="sort">Сортировка:</label><br>
+                <select id="sort" name="sort">
     <option>по популярности</option>
     <option>сначала недорогие</option>
     <option>сначала дорогие</option>
     <option>по жирности</option>    
     </select>
+            </div>
+            <div class="price">
+                <label>Цена: 100 руб. – 500 руб.</label><br>
+                <!-- Здесь будет слайдер -->
+            </div>
+            <div class="fat">
+                Жирность:<br>
+                <input type="radio" name="fat" value="a">0%
+                <input type="radio" name="fat" value="b" checked>до 10%
+                <input type="radio" name="fat" value="c">до 30%
+                <input type="radio" name="fat" value="d">выше 30%
+            </div>
+            <div class="fillers">
+                Наполнители:<br>
+                <input type="checkbox" name="fillers" checked>шоколадные
+                <input type="checkbox" name="fillers" checked>сахарные присыпки
+                <input type="checkbox" name="fillers">фрукты
+                <input type="checkbox" name="fillers">сиропы
+                <input type="checkbox" name="fillers">джемы
+            </div>
+        </section>
+        <div class="catalog">
+            <div class="catalog_item1">
+                <span>310&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            </div>
+            <div class="catalog_item2">
+                <span>380&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочно-кофейное с кусочками шоколада</span>
+            </div>
+            <div class="catalog_item3">
+                <span>355&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </div>
+            <div class="catalog_item4">
+                <span>415&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное крем-брюле с карамельной подливкой</span>
+            </div>
+            <div class="catalog_item5">
+                <span>325&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное с брусничным джемом</span>
+            </div>
+            <div class="catalog_item6">
+                <span>410&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочно-черничное с цельными ягодами черники</span>
+            </div>
+            <div class="catalog_item7">
+                <span>375&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочно-лимонное с карамельной присыпкой</span>
+            </div>
+            <div class="catalog_item8">
+                <span>320&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное с шоколадной стружкой</span>
+            </div>
+            <div class="catalog_item9">
+                <span>440&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочно-ванильное с кусочками шоколада</span>
+            </div>
+            <div class="catalog_item10">
+                <span>435&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочноe с ментоловым сиропом</span>
+            </div>
+            <div class="catalog_item11">
+                <span>355&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное с кусочками черного шоколада</span>
+            </div>
+            <div class="catalog_item12">
+                <span>420&#8381;</span>
+                <span>/кг</span>
+                <span>Сливочное с мятным сиропом</span>
+            </div>
         </div>
-        <div class="price">
-            <label>Цена: 100 руб. – 500 руб.</label><br>
-            <!-- Здесь будет слайдер -->
-        </div>
-        <div class="fat">
-            Жирность:<br>
-            <input type="radio" name="fat" value="a">0%
-            <input type="radio" name="fat" value="b" checked>до 10%
-            <input type="radio" name="fat" value="c">до 30%
-            <input type="radio" name="fat" value="d">выше 30%
-        </div>
-        <div class="fillers">
-            Наполнители:<br>
-            <input type="checkbox" name="fillers" checked>шоколадные
-            <input type="checkbox" name="fillers" checked>сахарные присыпки
-            <input type="checkbox" name="fillers">фрукты
-            <input type="checkbox" name="fillers">сиропы
-            <input type="checkbox" name="fillers">джемы
-        </div>
-    </section>
-    <div class="catalog">
-        <div class="catalog_item1">
-            <span>310&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-        </div>
-        <div class="catalog_item2">
-            <span>380&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочно-кофейное с кусочками шоколада</span>
-        </div>
-        <div class="catalog_item3">
-            <span>355&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-        </div>
-        <div class="catalog_item4">
-            <span>415&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное крем-брюле с карамельной подливкой</span>
-        </div>
-        <div class="catalog_item5">
-            <span>325&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное с брусничным джемом</span>
-        </div>
-        <div class="catalog_item6">
-            <span>410&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочно-черничное с цельными ягодами черники</span>
-        </div>
-        <div class="catalog_item7">
-            <span>375&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочно-лимонное с карамельной присыпкой</span>
-        </div>
-        <div class="catalog_item8">
-            <span>320&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное с шоколадной стружкой</span>
-        </div>
-        <div class="catalog_item9">
-            <span>440&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочно-ванильное с кусочками шоколада</span>
-        </div>
-        <div class="catalog_item10">
-            <span>435&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочноe с ментоловым сиропом</span>
-        </div>
-        <div class="catalog_item11">
-            <span>355&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное с кусочками черного шоколада</span>
-        </div>
-        <div class="catalog_item12">
-            <span>420&#8381;</span>
-            <span>/кг</span>
-            <span>Сливочное с мятным сиропом</span>
-        </div>
-    </div>
-    <ul class="paginator">
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">&gt;</a></li>
-    </ul>
+        <ul class="paginator">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&gt;</a></li>
+        </ul>
+    </main>
     <footer class="main-footer" style="background-color: #88a293">
         <div class="social">
             <a href="https://twitter.com/" class=" social-tw"></a>
