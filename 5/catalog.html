@@ -24,16 +24,34 @@
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О компании</a></li>
             </ul>
-            <ul class="user-navigation">
-                <li class="search">Лупа</li>
-                <li class="login-link">Вход</li>
-                <li class="cart">Корзина</li>
-            </ul>
+<div class="search">
+                Поиск
+                <form class="search-form" id="search-form" action="/" method="get">
+                    <input type="text" name="search-question" placeholder="Что ищем?">
+                </form>
+            </div>
+            <div class="signup">
+                Вход
+                <form class="sign-form" id="sign-form" action="/" method="post">
+                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <input class="btn" type="submit" value="Войти">
+                    <div class="signup_links">
+                        <a class="signup_link" href="#">
+                    <span class="signup_link__password">Забыли пароль?</span></a>
+                        <a class="sign-link" href="#">
+                    <span class="sign-link_reg">Новая регистрация</span></a>
+                    </div>
+                </form>
+            </div>
+            <div class="basket">
+                Пусто
+            </div>
         </nav>
-        <p class="time&contact">С 10 до 20, ежедневно
-            <br>
-            <span class="phone">8 812 450-25-25</span>
-        </p>
+        <div class="contacts">
+            <p class="time_contact">С 10 до 20, ежедневно</p>
+            <p class="phone">8 812 450-25-25</p>
+        </div>
     </header>
     <main class="main">
         <ul class="breadcrumbs">
@@ -148,7 +166,7 @@
             <a href="https://twitter.com/" class=" social-tw"></a>
             <a href="https://instagram.com/" class="social-ins"></a>
             <a href="https://facebook.com/" class="social-fb"></a>
-            <a href="https://vk.com/" class="class=" social-vk></a>
+            <a href="https://vk.com/" class="social-vk" ></a>
         </div>
         <ul class="footer_nav">
             <li><a href="#">Для поставщиков</a></li>
