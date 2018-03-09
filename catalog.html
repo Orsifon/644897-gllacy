@@ -4,17 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»"></a>
+      <a href="index.html" class="main-header-logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»"></a>
       <ul class="site-navigation">
         <li><a href="#">Каталог</a>
-          <ul class="catalog">
+          <ul class="sub-menu">
             <li><b><a href="#">Новинки</a></b></li>
-            <li>Сливочное</li>
+            <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
@@ -24,31 +26,34 @@
         <li><a href="#">О компании</a></li>
       </ul>
       <div class="search">
-        Поиск
         <form class="search-form" id="search-form" action="/" method="get">
-          <input type="text" name="search-question" placeholder="Что ищем?">
+          <label for="search-question" class="visually-hidden">Поиск</label>
+          <input type="text" name="search-question" id="search-question" placeholder="Что ищем?">
         </form>
       </div>
       <div class="signup">
-        Вход
+        <span class="enter-form">Вход</span>
         <form class="sign-form" id="sign-form" action="/" method="post">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <input class="btn" type="submit" value="Войти">
+          <label for="signup-email" class="visually-hidden">Электронная почта</label>
+          <input type="email" name="email" id="signup-email" placeholder="Электронная почта">
+          <label for="signup-password" class="visually-hidden">Пароль</label>
+          <input type="password" name="password" id="signup-password" placeholder="Пароль">
+          <button class="button" type="submit">Войти</button>
           <div class="signup_links">
             <a class="signup_link" href="#">
-              <span class="signup_link__password">Забыли пароль?</span></a>
+                    <span class="signup_link__password">Забыли пароль?</span></a>
             <a class="sign-link" href="#">
-              <span class="sign-link_reg">Новая регистрация</span></a>
+                    <span class="sign-link_reg">Новая регистрация</span></a>
           </div>
         </form>
       </div>
-      <div class="basket">
+      <section class="basket">
+        <h2 class="visually-hidden">Корзина</h2>
         <span class="basket_icon"></span>2 товара
         <table class="basket_table">
           <tr>
             <td>
-              <a class="botton_remove" href="#">X</a>
+              <button class="button_remove">Удалить</button>
             </td>
             <td><img src="img/ice-cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
             <td>Пломбир с апельсиновым джемом</td>
@@ -57,7 +62,7 @@
           </tr>
           <tr>
             <td>
-              <a class="botton_remove" href="#">X</a>
+              <button class="button_remove">Удалить</button>
             </td>
             <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
@@ -65,27 +70,28 @@
             <td>450 руб.</td>
           </tr>
           <tr>
-            <td colspan="5">Итого 750 руб.
-              <a class="btn" href="#">Оформить заказ</a>
+            <td class="basket-total" colspan="5">Итого 750 руб.
+              <a class="button" href="#">Оформить заказ</a>
             </td>
           </tr>
         </table>
-      </div>
+      </section>
     </nav>
     <div class="contacts">
+      <h2 class="visually-hidden">Время работы</h2>
       <p class="time_contact">С 10 до 20, ежедневно</p>
       <p class="phone">8 812 450-25-25</p>
     </div>
   </header>
   <main class="main">
     <ul class="breadcrumbs">
-      <li><a href="#">Главная  »</a></li>
+      <li><a href="index.html">Главная  »</a></li>
       <li><a href="#">Каталог  »</a></li>
       <li>Сливочное</li>
     </ul>
     <h1 class="catalog_header">Сливочное мороженое</h1>
     <section class="filters">
-      <h2 class="hidden">Фильтры:</h2>
+      <h2 class="visually-hidden">Фильтры:</h2>
       <form class="filters-form" id="filters-form" action="/" method="get">
         <fieldset class="sort">
           <legend>Сортировка:</legend>
@@ -118,7 +124,7 @@
       </form>
     </section>
     <section class="catalog">
-      <h2 class="hidden">Каталог:</h2>
+      <h2 class="visually-hidden">Каталог:</h2>
       <div class="catalog_item">
         <img class="catalog_img" src="img/ice-cream-1.jpg" width="267" height="267" alt="Мороженое">
         <p class="price"><span>310&#8381;</span>
@@ -202,12 +208,13 @@
     </ul>
   </main>
   <footer class="main-footer">
-    <div class="social">
-      <a href="https://twitter.com/" class=" social-tw"></a>
-      <a href="https://instagram.com/" class="social-ins"></a>
-      <a href="https://facebook.com/" class="social-fb"></a>
-      <a href="https://vk.com/" class="social-vk"></a>
-    </div>
+    <section class="social-links">
+      <h2 class="visually-hidden">Социальные сети:</h2>
+      <a href="https://twitter.com/" class="social-tw" aria-label="Твиттер">Твиттер</a>
+      <a href="https://instagram.com/" class="social-ins" aria-label="Инстаграм">Инстаграм</a>
+      <a href="https://facebook.com/" class="social-fb" aria-label="Фейсбук">Фейсбук</a>
+      <a href="https://vk.com/" class="social-vk" aria-label="Вконтакте">Вконтакте</a>
+    </section>
     <ul class="footer_nav">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>

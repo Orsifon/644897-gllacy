@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,17 +26,19 @@
         <li><a href="#">О компании</a></li>
       </ul>
       <div class="search">
-        Поиск
         <form class="search-form" id="search-form" action="/" method="get">
-          <input type="text" name="search-question" placeholder="Что ищем?">
+          <label for="search-question" class="visually-hidden">Поиск</label>
+          <input type="text" name="search-question" id="search-question" placeholder="Что ищем?">
         </form>
       </div>
       <div class="signup">
-        Вход
+        <span class="enter-form">Вход</span>
         <form class="sign-form" id="sign-form" action="/" method="post">
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <input class="btn" type="submit" value="Войти">
+          <label for="signup-email" class="visually-hidden">Электронная почта</label>
+          <input type="email" name="email" id="signup-email" placeholder="Электронная почта">
+          <label for="signup-password" class="visually-hidden">Пароль</label>
+          <input type="password" name="password" id="signup-password" placeholder="Пароль">
+          <input class="button" type="submit" value="Войти">
           <div class="signup_links">
             <a class="signup_link" href="#">
                     <span class="signup_link__password">Забыли пароль?</span></a>
@@ -57,7 +60,8 @@
     <section class="slider">
       <h2>Крем брюле и пломбир с малиновым джемом</h2>
       <h2>Шоколадный пломбир и лимонный сорбет</h2>
-      <h2>Пломбир с помадкой и клубничный щербет</h2> <a href="#" class="botton">Дайте оба!</a>
+      <h2>Пломбир с помадкой и клубничный щербет</h2>
+      <a href="#" class="button">Дайте оба!</a>
       <input type="radio" name="choose" value="a" checked>
       <input type="radio" name="choose" value="b">
       <input type="radio" name="choose" value="c">
@@ -65,13 +69,14 @@
     <section class="banner1">
       <h3>Малинка даром!</h3>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="#" class="botton">Хочу варенье!</a>
+      <a href="#" class="button">Хочу варенье!</a>
     </section>
     <section class="banner2">
       <h3>Шоколадки даром!</h3>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-      <a href="#" class="botton">Хочу шоколадки!</a>
+      <a href="#" class="button">Хочу шоколадки!</a>
     </section>
+  <h2 class="visually-hidden">Хиты</h2>
     <div class="hits">
       <div class="catalog_item">
         <div class="catalog_item_prewiew_hit"></div>
@@ -111,7 +116,7 @@
         <li class="about_shop_icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
         <li class="about_shop_cow">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
         <li class="about_shop_leaf">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-        <li class="about shop_term">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        <li class="about_shop_term">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
       </ul>
     </div>
     <article class="news">
@@ -120,26 +125,30 @@
     </article>
     <div class="mailing">
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <input type="email" placeholder="Электронная почта"><a href="#" class="botton">Отправить</a>
+      <form class="mail-form" id="mail-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="mail-input" class="visually-hidden">Электронная почта</label><input type="text" id="mail-input" placeholder="Электронная почта">
+        <button class="button" type="submit">Отправить</button></form>
     </div>
     <div class="map">
-      <!-- Здесь будет карта -->
+      <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <section class="address">
         <h4>Адрес главного офиса и офлайн-магазина:</h4>
         <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону:</p>
-        <p>8 812 450-25-25<br> (с 10 до 20 ежедневно)
+        <p><b>8 812 450-25-25</b><br> (с 10 до 20 ежедневно)
         </p>
+        <a class="button" href="#">Форма обратной связи</a>
       </section>
     </div>
   </main>
   <footer class="main-footer">
-    <div class="social">
-      <a href="https://twitter.com/" class=" social-tw">Твиттер</a>
-      <a href="https://instagram.com/" class="social-ins">Инстаграм</a>
-      <a href="https://facebook.com/" class="social-fb">Фейбук</a>
-      <a href="https://vk.com/" class="social-vk">Вконтакте</a>
-    </div>
+    <section class="social-links">
+      <h2 class="visually-hidden">Социальные сети:</h2>
+      <a href="https://twitter.com/" class="social-tw" aria-label="Твиттер">Твиттер</a>
+      <a href="https://instagram.com/" class="social-ins" aria-label="Инстаграм">Инстаграм</a>
+      <a href="https://facebook.com/" class="social-fb" aria-label="Фейсбук">Фейсбук</a>
+      <a href="https://vk.com/" class="social-vk" aria-label="Вконтакте">Вконтакте</a>
+    </section>
     <ul class="footer_nav">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
@@ -151,6 +160,25 @@
       <br>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a>© 2017
     </p>
   </footer>
+  <section class="feedback">
+    <h2>Мы обязательно вам ответим!</h2>
+    <button class="button" type="button">Закрыть</button>
+    <form class="feedback-form" id="feedback-form" action="/" method="post">
+     <div class="feedback">
+      <label for="feedback-name">Как вас зовут?</label>
+      <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
+      </div>
+      <div class="feedback">
+      <label for="feedback-email">Ваша почта для ответа?</label>
+      <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+      </div>
+      <div class="feedback">
+      <label for="feedback-textarea">Напишите что-нибудь...</label>
+      <textarea id="feedback-textarea" name="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
+      </div>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
